@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<body>
+    <div class="aside-nav position-fixed z-2  d-flex  w-25 ">
+        
+        <div  class="side-content bg-black text-white d-flex position-relative  overflow-hidden">
+            <div class="links ">
+                <ul class="list-unstyled pt-4">
+                    <li class="p-2 search" style="transition-delay: 0s;">Search</li>
+                    <li class="p-2 categories" style="transition-delay: 0.2s;">Categories</li>
+                    <li class="p-2 area" style="transition-delay: 0.4s;">Area</li>
+                    <li class="p-2 ingredients" style="transition-delay: 0.6s;">Ingredients</li>
+                    <li class="p-2 contact"style="transition-delay: 0.8s;">Contact Us</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i  class="fa-brands fa-twitter"></i>
+                    
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p>Copyright Â© 2019 All Rights
+                    Reserved.
+                    
+                    </p>
+            </div>
+
+        </div>
+        <div class="small-nav  bg-white d-flex py-4 ">
+            <div class="logo p-2">
+                <img width="100%" src="../logo.png" alt="">
+            </div>
+            <div class=" h2">
+                <div class="open">
+                    <i class="fa-solid fa-align-justify"></i>
+                </div>
+                <div class="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+           
+            <div class="icons w-25">
+                <i class="fa-solid fa-share-nodes"></i>
+                <i class="fa-solid fa-globe"></i>
+
+            </div>
+        </div>
+    </div>
+    <div class="contact-content">
+        <div class="container p-5 text-center ">
+            <div class="row pt-5 text-center">
+                <div class="col-md-6 my-3 ps-5 ">
+                    <div class="input ">
+                        <input oninput="validate(nameRegex , this)" class="form-control nameInput" type="text" placeholder="Enter Your Name">
+
+                    </div>
+                    <div class="error-name">
+                        <p class="rounded-2 mt-2 d-none">Special characters and numbers not allowed
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-6  my-3 pe-5 ">
+                    <div class="input emailInput">
+                        <input oninput="validate(emailRegex , this)" class="form-control " type="text" placeholder="Enter Your email">
+
+                    </div>
+                    <div class="error-email ">
+                        <p class="rounded-2 mt-2 d-none">Email not valid *exemple@yyy.zzz
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-6  my-3 ps-5 ">
+                    <div class="input phoneInput">
+                        <input oninput="validate( phoneRegex , this)" class="form-control" type="text" placeholder="Enter Your Phone">
+
+                    </div>
+                    <div class="error-phone">
+                        <p class="rounded-2 mt-2 d-none">Enter valid Phone Number
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-6  my-3 pe-5">
+                    <div class="input ageInput">
+                        <input oninput="validate(ageRegex , this)" class="form-control  " type="text" placeholder="Enter Your Age">
+
+                    </div>
+                    <div class="error-age">
+                        <p class="rounded-2 mt-2 d-none">Enter valid age
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-6  my-3 ps-5">
+                    <div class="input">
+                        <input  oninput="validate(passwordRegex , this)" class="form-control passwordInput" type="text" placeholder="Enter Your Password">
+
+                    </div>
+                    <div class="error-msg">
+                        <p class="rounded-2 mt-2 d-none">Enter valid password *Minimum eight characters, at least one letter and one number:*
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-6  my-3 pe-5 repassInput">
+                    <div class="input " >
+                        <input oninput="repass()"  class="form-control" type="text" placeholder="Repassword">
+
+                    </div>
+                    <div class="error-re">
+                        <p class="rounded-2 mt-2 d-none">Enter valid repassword
+
+                        </p>
+
+                    </div>
+                    
+                </div>
+                <div class="button ">
+                    <button disabled class=" w-25 disabled submitButton">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>

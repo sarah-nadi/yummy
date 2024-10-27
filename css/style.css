@@ -1,0 +1,103 @@
+body{
+    background-color: black;
+}
+.meals .item .overlay{
+    background-color: #c8c6c6b7;
+    
+}
+.item .overlay{
+    transition: top 500ms;
+    top: 100%;
+
+
+}
+.meals .item:hover .overlay{
+    top:0px;
+
+    
+    
+}
+.side-content .links li {
+    opacity: 0;
+    transform: translateY(200px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.side-content .links li.block {
+    opacity: 1; 
+    transform: translateY(0);
+    
+}
+.aside-nav .side-content{
+    width:0%;
+    .links{
+        padding-left: 30px;
+    }
+    .copyright{
+        padding-left: 30px;
+    }
+}
+.aside-nav .side-content {
+    flex-direction: column;
+    justify-content:space-between ;
+    height: 100vh;
+}
+.close{
+    display: none;
+    cursor: pointer;
+}
+.open{
+    cursor:pointer;
+}
+.aside-nav .side-content i,
+li{
+    cursor: pointer;
+
+}
+.aside-nav .small-nav{
+    height: 100vh;
+    flex-direction: column;
+    justify-content:space-between ;
+    align-items: center;
+    width: 20%;
+}
+.search-content{
+    height:100vh;
+    background-color: #0D0D0D;
+}
+.search-input::placeholder{
+    color:#8d8c8c
+}
+.area-content{
+    i{
+        font-size: 65px;
+    }
+   
+}
+.ingredients-content .row {
+    i{
+        font-size: 66px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+.pointer{
+    cursor: pointer;
+}
+.contact-content .row p{
+    background-color: #F8D7DA;
+    padding:18px 50px;
+    text-align: center;
+    color: #943a3a;
+}
+.contact-content .row button{
+    border:1px #943a3a solid;
+    border-radius: 10px;
+    padding:10px 30px;
+    color: #943a3a;
+    background-color: transparent;
+    &:hover{
+        color:white;
+        background-color: #943a3a;
+    }
+}
