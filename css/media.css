@@ -1,12 +1,12 @@
 @media  (max-width: 720px){
     .aside-nav .small-nav{
         width: 27%;
-        height: 100svh;
+        min-height: 100dvh;
 
     }
     
     .aside-nav .side-content{
-        height: 100svh;
+        min-height: 100dvh;
     width:0%;
     
     .links{
@@ -24,6 +24,7 @@
 }
 .aside-nav{
     min-height: 100dvh;
+    overflow: hidden;
 }
 .container .row .col-md-6{
     

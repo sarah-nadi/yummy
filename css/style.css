@@ -28,7 +28,7 @@ body{
     
 }
 .aside-nav{
-    height: 100vh;
+    height: 100dvh;
     
 }
 .aside-nav .side-content{
@@ -43,7 +43,9 @@ body{
 .aside-nav .side-content {
     flex-direction: column;
     justify-content: space-between;
-    height: 100svh;
+    
+     overflow: hidden;
+  height: 100%;
 }
 .close{
     display: none;
@@ -58,11 +60,12 @@ li{
 
 }
 .aside-nav .small-nav{
-    height: 100svh;
+    height: 100dvh;
     flex-direction: column;
     justify-content:space-between ;
     align-items: center;
     width: 20%;
+    overflow: hidden;
 }
 .w-90{
     width: 91%;
