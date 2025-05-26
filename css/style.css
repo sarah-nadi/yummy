@@ -27,6 +27,9 @@ body{
     transform: translateY(0);
     
 }
+.aside-nav{
+    height: 100vh;
+}
 .aside-nav .side-content{
     width:0%;
     .links{
