@@ -22,6 +22,9 @@
     
     width: 80%;
 }
+.aside-nav{
+    min-height: 100vh;
+}
 .container .row .col-md-6{
     
     width: 90%;
