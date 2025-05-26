@@ -21,13 +21,17 @@
 .container .row .col-md-6{
     
     width: 90%;
-    
+   
 
     
    
    
    
    
+}
+.search-content .container .row .col-md-6{
+    margin:20px 10px 0px 60px;
+    width: 80%;
 }
 .container .row .button{
     width:fit-content;

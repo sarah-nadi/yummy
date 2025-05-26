@@ -29,6 +29,9 @@ body{
 }
 .aside-nav{
     height: 100vh;
+    .side-content{
+        min-height: 100vh;
+    }
 }
 .aside-nav .side-content{
     width:0%;
