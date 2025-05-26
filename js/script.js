@@ -41,22 +41,22 @@ $(".close").on("click",function(){
 
 })
 $(document).on("click", ".search", function(){
-    window.location.href = "../html/search.html";
+    window.location.href = "search.html";
 });
 $(document).on("click", ".categories", function(){
-    window.location.href = "../html/categories.html";
+    window.location.href = "categories.html";
 });
 
 $(document).on("click", ".area", function(){
-    window.location.href = "../html/area.html";
+    window.location.href = "area.html";
 });
 
 $(document).on("click", ".contact", function(){
-    window.location.href = "../html/contact.html";
+    window.location.href = "contact.html";
 });
 
 $(document).on("click", ".ingredients", function(){
-    window.location.href = "../html/ingredients.html";
+    window.location.href = "ingredients.html";
 });
 
 
@@ -159,15 +159,15 @@ function displayMeals (arr){
     for (var i = 0 ; i< arr.length ; i++){
         var category = arr[i].strCategory;
         mealsContainer.innerHTML+= `
-         <div onclick="showCategory('${category}')" class="item col-md-3 position-relative  overflow-hidden M-3">
+         <div onclick="showCategory('${category}')" class="item col-md-3 position-relative  overflow-hidden my-3">
                     <div >
                         <img class=" img w-100 rounded-2" src=${arr[i].strCategoryThumb} alt="">
     
                     </div>
-                    <div class="overlay position-absolute  w-100 h-100 rounded-2 text-center pt-3">
-                        <p class="ps-3 h3">${arr[i].strCategory}</p>
-                        <p>${arr[i].strCategoryDescription}</p>
-                    </div>
+                    <div class="overlay position-absolute w-90 h-100 rounded-3 text-center p-3">
+  <p class="ps-3 h3">${arr[i].strCategory}</p>
+  <p>${arr[i].strCategoryDescription.split(" ").slice(0, 10).join(" ")}...</p>
+</div>
     
                 </div>`
     }
@@ -188,21 +188,21 @@ getCategories()
 
 function showCategory(category){
     localStorage.setItem('selectedCategory',category);
-    window.location.href="/html/filtercat.html";
+    window.location.href="filtercat.html";
 }
 
 function displayCategories (arr){
     for (var i = 0 ; i< arr.length ; i++){
         var category = arr[i].strCategory;
         categoryContainer.innerHTML+= `
-         <div onclick="showCategory('${category}')" class="item col-md-3 position-relative  overflow-hidden M-3">
+         <div onclick="showCategory('${category}')" class="item col-md-3 position-relative my-3  overflow-hidden M-3">
                     <div >
                         <img class=" img w-100 rounded-2" src=${arr[i].strCategoryThumb} alt="">
     
                     </div>
-                    <div class="overlay position-absolute  w-100 h-100 rounded-2 text-center pt-3">
+                    <div class="overlay position-absolute  w-90 h-100 rounded-3 text-center p-3">
                         <p class="ps-3 h3">${arr[i].strCategory}</p>
-                        <p>${arr[i].strCategoryDescription}</p>
+                       <p>${arr[i].strCategoryDescription.split(" ").slice(0, 10).join(" ")}...</p>
                     </div>
     
                 </div>`
@@ -225,7 +225,7 @@ getArea();
 
 function showArea(area){
     localStorage.setItem('selectedArea',area);
-    window.location.href='/html/filtearea.html';
+    window.location.href='filtearea.html';
 
 }
 
@@ -233,9 +233,9 @@ function displayArea(arr){
     for(var i = 0 ; i < arr.length ; i++){
         var area = arr[i].strArea;
         areaContainer.innerHTML+=`
-         <div onclick="showArea('${area}')" class="col-md-3 text-center text-white pointer my-4">
+         <div onclick="showArea('${area}')" class="col-md-3  text-center text-white pointer my-4">
                     <i  class="fa-solid fa-house-laptop"></i>
-                    <p class="h2" >${arr[i].strArea}</p>
+                    <p class="h2 " >${arr[i].strArea}</p>
                 </div>`
         
 
@@ -265,7 +265,7 @@ getIngredients()
 
 function showIngre(ingre){
     localStorage.setItem('selectedIngre',ingre);
-    window.location.href='/html/filterIngre.html';
+    window.location.href='filterIngre.html';
 
 }
 
@@ -312,8 +312,8 @@ function displayFilterIngre(arr){
                         <img class=" img w-100 rounded-2" src=${arr[i].strMealThumb} alt="">
     
                     </div>
-                    <div class="overlay position-absolute  w-100 h-100 rounded-2 text-center pt-3">
-                        <p class="ps-3 h3">${arr[i].strMeal}</p>
+                    <div class="overlay position-absolute  w-90 h-100 rounded-2  text-center pt-3">
+                        <p class="p-3 h4">${arr[i].strMeal}</p>
                         
                     </div>
     `
@@ -343,8 +343,8 @@ function displayFilterCategory(arr){
                         <img class=" img w-100 rounded-2" src=${arr[i].strMealThumb} alt="">
     
                     </div>
-                    <div class="overlay position-absolute  w-100 h-100 rounded-2 text-center pt-3">
-                        <p class="ps-3 h3">${arr[i].strMeal}</p>
+                    <div class="overlay position-absolute  w-90 h-100 rounded-3 text-center pt-3">
+                        <p class="p-3 h4 w-50">${arr[i].strMeal}</p>
                         
                     </div>
     
@@ -382,8 +382,8 @@ function displayFilterArea(arr){
                         <img class=" img w-100 rounded-2" src=${arr[i].strMealThumb} alt="">
     
                     </div>
-                    <div class="overlay position-absolute  w-100 h-100 rounded-2 text-center pt-3">
-                        <p class="ps-3 h3">${arr[i].strMeal}</p>
+                    <div class="overlay position-absolute w-90 h-100 rounded-2 text-center pt-3">
+                        <p class=" h4 w-50 mx-auto">${arr[i].strMeal}</p>
                         
                     </div>
     

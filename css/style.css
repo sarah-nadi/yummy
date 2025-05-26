@@ -60,6 +60,9 @@ li{
     align-items: center;
     width: 20%;
 }
+.w-90{
+    width: 91%;
+}
 .search-content{
     height:100vh;
     background-color: #0D0D0D;
@@ -100,4 +103,8 @@ li{
         color:white;
         background-color: #943a3a;
     }
+}
+
+.container .row .col-md-6{
+    margin: 15px 0px;
 }
